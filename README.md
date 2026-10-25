@@ -9,14 +9,14 @@ Featuring onboard Li-Po battery management, and an I2S audio subsystem for ultra
 - Battery charge management system
 - A camera that allows real time monitization.
 
-##Components
+## Components
 - ESP23-3S Development board with camera
 - NRF24L01+ Radio Module
 - MAX98357A I2S Amplifier
 - INMP441 Digital Microphone
 - Battery
 
-##PCB
+## PCB
 - Fully Designed by me. The PCB holds the ESP32-3S module. The dimension  of ESP32 mainboard and the PCB size is most likely the same. It is build in a compact area to make it as mobile as possible.
 - The schematic of The main board-
 - <img width="724" height="573" alt="Screenshot 2026-10-24 190346" src="https://github.com/user-attachments/assets/3f89cd34-a7ea-4b09-bbc5-399c27230f25" />
