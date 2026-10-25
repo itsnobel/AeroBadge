@@ -16,7 +16,20 @@ Featuring onboard Li-Po battery management, and an I2S audio subsystem for ultra
 - INMP441 Digital Microphone
 - Battery
 
-## PCB
+## Key Features
+- **ESP32-S3 Core:** High-performance dual-core MCU handling DSP and wireless tasks.
+- **I2S Audio Subsystem:** INMP441 MEMS Microphone for crystal-clear audio capture and MAX98357A Class-D DAC/Amplifier for audio output.
+- **Off-Grid Wireless:** NRF24L01+ 2.4GHz transceiver for real-time peer-to-peer voice streaming.
+- **Wearable Power:** Powered via external 3.7V Li-Po battery input with on-board regulation.
+
+## Hardware Pinout Configuration
+- **Audio Subsystem:**
+  - INMP441 Mic: `SCK` -> GPIO7, `WS` -> GPIO20, `SD` -> GPIO3
+  - MAX98357A Amp: `BCLK` -> GPIO7, `LRC` -> GPIO20, `DIN` -> GPIO1
+- **NRF24L01+ Radio:**
+  - `CE` -> GPIO9, `CSN` -> GPIO10, `SCK` -> GPIO12, `MOSI` -> GPIO11, `MISO` -> GPIO13
+
+## Project Photos & Schematic
 - Fully Designed by me. The PCB holds the ESP32-3S module. The dimension  of ESP32 mainboard and the PCB size is most likely the same. It is build in a compact area to make it as mobile as possible.
 - The schematic of The main board-
 - <img width="724" height="573" alt="Screenshot 2026-10-24 190346" src="https://github.com/user-attachments/assets/3f89cd34-a7ea-4b09-bbc5-399c27230f25" />
