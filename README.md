@@ -1,12 +1,12 @@
-# AeroBadge - Cyberpunk Voice-Badge & Off-Grid Walkie-Talkie
+# AeroBadge - Cyberpunk Voice-Badge
 
-A standalone, wearable cyberpunk voice-badge and off-grid walkie-talkie powered by ESP32-S3 and NRF24L01+. 
-Featuring onboard Li-Po battery management, and an I2S audio subsystem for ultra-low latency peer-to-peer voice streaming, audio logging, and offline smart commands without internet.
+A standalone, wearable(cz its tiny) cyberpunk voice-badge and off-grid walkie-talkie powered by ESP32-S3 and NRF24L01+. 
+it fearures onboard Li-Po battery management, and an I2S audio subsystem for ultra-low latency peer-to-peer voice streaming(in a certain range of NRF24L01+) tha, audio logging, and offline smart commands without internet.
 
 ## Features
 - Ultra-low latency voice streaming over NRF24L01+
 - I2S Audio Subsystem (INMP441 Mic + MAX98357A Amp)
-- Battery charge management system
+- small battery system that fits into the PCB.
 - A camera that allows real time monitization.
 
 ## Components
@@ -18,11 +18,11 @@ Featuring onboard Li-Po battery management, and an I2S audio subsystem for ultra
 
 ## Key Features
 - **ESP32-S3 Core:** High-performance dual-core MCU handling DSP and wireless tasks.
-- **I2S Audio Subsystem:** INMP441 MEMS Microphone for crystal-clear audio capture and MAX98357A Class-D DAC/Amplifier for audio output.
-- **Off-Grid Wireless:** NRF24L01+ 2.4GHz transceiver for real-time peer-to-peer voice streaming.
+- **I2S Audio Subsystem:** INMP441 MEMS Microphone for voice capture and MAX98357A Class-D DAC/Amplifier for 8W audio output.
+- **Off-Grid Wireless:** NRF24L01+ 2.4GHz transceiver for real-time voice streaming.
 - **Wearable Power:** Powered via external 3.7V Li-Po battery input with on-board regulation.
 
-## Hardware Pinout Configuration
+## Pinout Configuration
 - **Audio Subsystem:**
   - INMP441 Mic: `SCK` -> GPIO7, `WS` -> GPIO20, `SD` -> GPIO3
   - MAX98357A Amp: `BCLK` -> GPIO7, `LRC` -> GPIO20, `DIN` -> GPIO1
