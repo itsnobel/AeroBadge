@@ -3,11 +3,19 @@
 A standalone, wearable(cz its tiny) cyberpunk voice-badge and off-grid walkie-talkie powered by ESP32-S3 and NRF24L01+. 
 it fearures onboard Li-Po battery management, and an I2S audio subsystem for ultra-low latency peer-to-peer voice streaming(in a certain range of NRF24L01+) tha, audio logging, and offline smart commands without internet.
 
+
+---
+
+
 ## Features
 - Ultra-low latency voice streaming over NRF24L01+
 - I2S Audio Subsystem (INMP441 Mic + MAX98357A Amp)
 - small battery system that fits into the PCB.
 - A camera that allows real time monitization.
+
+
+---
+
 
 ## Components
 - ESP23-3S Development board with camera
@@ -16,18 +24,29 @@ it fearures onboard Li-Po battery management, and an I2S audio subsystem for ult
 - INMP441 Digital Microphone
 - Battery
 
-## Key Features
-- **ESP32-S3 Core:** High-performance dual-core MCU handling DSP and wireless tasks.
-- **I2S Audio Subsystem:** INMP441 MEMS Microphone for voice capture and MAX98357A Class-D DAC/Amplifier for 8W audio output.
-- **Off-Grid Wireless:** NRF24L01+ 2.4GHz transceiver for real-time voice streaming.
-- **Wearable Power:** Powered via external 3.7V Li-Po battery input with on-board regulation.
 
-## Pinout Configuration
-- **Audio Subsystem:**
-  - INMP441 Mic: `SCK` -> GPIO7, `WS` -> GPIO20, `SD` -> GPIO3
-  - MAX98357A Amp: `BCLK` -> GPIO7, `LRC` -> GPIO20, `DIN` -> GPIO1
-- **NRF24L01+ Radio:**
-  - `CE` -> GPIO9, `CSN` -> GPIO10, `SCK` -> GPIO12, `MOSI` -> GPIO11, `MISO` -> GPIO13
+---
+
+## Key Features
+
+- ESP32-S3 Core - Powerful dual core MCU with built in DSP.
+- I2S Audio System - Uses INMP441 MEMS mic for audio capture and MAX98357A class D DAC/amplifier for 8W audio.
+- Off Grid - Uses NRF24L01+ 2.4Ghz radio for real time audio transmission.
+- Wearable - Powered using external 3.7V Li-Po battery.
+
+---
+
+
+## Audio Pinout
+
+* INMP441 Mic- SCK - GPIO7, WS - GPIO20, SD - GPIO3
+* MAX98357A Amp - BCLK - GPIO7, LRC - GPIO20, DIN - GPIO1
+* NRF24L01+: CE - GPIO9, CSN - GPIO10, SCK - GPIO12, MOSI - GPIO11, MISO - GPIO13
+
+
+---
+
+
 
 ## Project Photos & Schematic
 - Fully Designed by me. The PCB holds the ESP32-3S module. The dimension  of ESP32 mainboard and the PCB size is most likely the same. It is build in a compact area to make it as mobile as possible.
